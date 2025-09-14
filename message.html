@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Font Awesome Solid -->
+
+    <link rel="stylesheet" href="css/all.css" />
+  </head>
+  <body class="bg-gray-200">
+    <nav
+      class="fixed z-3 top-0 left-[6vw] w-[94vw] flex justify-between items-center p-3 px-8 bg-gray-50 shadow-lg max-w-[90vw] mx-auto border-l-2 border-l-black/10 border-r-2 border-r-black/10"
+    >
+      <div
+        class="w-120 font-seminold flex items-center justify-between pt-1 pl-1"
+      >
+        <h1 class="font-bold text-2xl mr-10">Shopmad</h1>
+
+        <a href="./index.html" class="flex items-center gap-1"
+          ><i class="fa fa-home text-2xl"></i
+        ></a>
+        <a href="#" class="flex items-center gap-1"
+          ><i class="fa fa-users text-2xl"></i
+        ></a>
+        <a href="#" class="flex items-center gap-1">
+          <i class="fa-solid fa-comments text-2xl text-blue-600"></i>
+        </a>
+        <a href="#" class="relative"
+          ><i class="fa fa-bell text-2xl"></i>
+          <span
+            class="absolute -top-2 left-5 inline-flex items-center justify-center h-5 min-w-5 rounded-full bg-red-500 text-white px-1 text-xs font-mono tabular-nums"
+          >
+            8
+          </span></a
+        >
+        <!-- <a href="#"><i class="fa-solid fa-list text-2xl"></i></a> -->
+      </div>
+      <div class="w-100 flex items-center justify-between">
+        <input
+          type="text"
+          name=""
+          class="border w-68 rounded-2xl pl-4 p-1 cursor-pointer border-gray-300"
+          id=""
+          placeholder="Creer une vente"
+        />
+        <button class="w-24 font-semibold cursor-pointer text-blue-600">Echanger ?</button>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="./profile.html" class="flex items-center gap-1">
+          <i class="fa-regular fa-user text-2xl text-yellow-700"></i>
+        </a>
+        <a href="#" class="flex items-center gap-1">
+          <i class="fa-solid fa-right-to-bracket text-2xl"></i>
+        </a>
+      </div>
+    </nav>
+
+    <!-- Zone de chat principale -->
+    <div class="max-w-6xl h-[86vh] mx-auto mt-20 flex gap-1 overflow-y-hidden">
+      <!-- Sidebar gauche -->
+      <div class=" w-80 bg-white border-r border-gray-200 flex flex-col">
+        <!-- Header avec logo et profil -->
+        <div
+          class="flex items-center justify-between p-4 border-b border-gray-200"
+        >
+          <div class="flex items-center space-x-2">
+            <div
+              class="w-8 h-8 bg-blue-600 rounded flex items-center justify-center"
+            >
+              <i class="fas fa-comment text-white text-sm"></i>
+            </div>
+            <span class="text-gray-600 text-sm">Jolly</span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <input
+              type="text"
+              placeholder="Search here..."
+              class="text-sm bg-gray-100 rounded-full px-3 py-1 w-32"
+            />
+            <div
+              class="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center"
+            >
+              <span class="text-white text-xs font-bold">ZR</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Messages section -->
+        <div class="flex-1 overflow-y-auto">
+          <div class="p-4">
+            <div class="flex items-center justify-between mb-4">
+              <h2 class="text-lg font-semibold text-gray-800">Messages</h2>
+              <span
+                class="bg-blue-600 text-white text-xs rounded-full px-2 py-1"
+                >5</span
+              >
+            </div>
+
+            <!-- Liste des conversations -->
+            <div class="space-y-1">
+              <!-- Conversation active -->
+              <div
+                class="flex items-center p-3 bg-blue-50 rounded-lg cursor-pointer"
+              >
+                <div
+                  class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold mr-3"
+                >
+                  BD
+                </div>
+                <div class="flex-1">
+                  <div class="flex justify-between items-start">
+                    <h3 class="font-medium text-gray-800">Bingi Dingi</h3>
+                    <span class="text-xs text-gray-500">10:30</span>
+                  </div>
+                  <p class="text-sm text-gray-600">Creative Designer</p>
+                </div>
+              </div>
+
+              <!-- Autres conversations -->
+              <div
+                class="flex items-center p-3 rounded-lg cursor-pointer hover:bg-gray-50"
+              >
+                <div
+                  class="w-10 h-10 bg-pink-500 rounded-full flex items-center justify-center text-white font-bold mr-3"
+                >
+                  A
+                </div>
+                <div class="flex-1">
+                  <div class="flex justify-between items-start">
+                    <h3 class="font-medium text-gray-800">Aishi</h3>
+                    <span class="text-xs text-gray-500">9:45</span>
+                  </div>
+                  <p class="text-sm text-gray-600">Creative Designer</p>
+                </div>
+              </div>
+
+              <div
+                class="flex items-center p-3 rounded-lg cursor-pointer hover:bg-gray-50"
+              >
+                <div
+                  class="w-10 h-10 bg-cyan-500 rounded-full flex items-center justify-center text-white font-bold mr-3"
+                >
+                  SB
+                </div>
+                <div class="flex-1">
+                  <div class="flex justify-between items-start">
+                    <h3 class="font-medium text-gray-800">Salman Birat</h3>
+                    <span class="text-xs text-gray-500">1 day</span>
+                  </div>
+                  <p class="text-sm text-gray-600">Learning page for website</p>
+                </div>
+              </div>
+
+              <div
+                class="flex items-center p-3 rounded-lg cursor-pointer hover:bg-gray-50"
+              >
+                <div
+                  class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center text-white font-bold mr-3"
+                >
+                  NH
+                </div>
+                <div class="flex-1">
+                  <div class="flex justify-between items-start">
+                    <h3 class="font-medium text-gray-800">Nayem Hasan</h3>
+                    <span class="text-xs text-gray-500">1 day</span>
+                  </div>
+                  <p class="text-sm text-gray-600">Learning page for website</p>
+                </div>
+              </div>
+
+              <div
+                class="flex items-center p-3 rounded-lg cursor-pointer hover:bg-gray-50"
+              >
+                <div
+                  class="w-10 h-10 bg-blue-400 rounded-full flex items-center justify-center text-white font-bold mr-3"
+                >
+                  LO
+                </div>
+                <div class="flex-1">
+                  <div class="flex justify-between items-start">
+                    <h3 class="font-medium text-gray-800">Limpat Ozzam</h3>
+                    <span class="text-xs text-gray-500">1 day</span>
+                  </div>
+                  <p class="text-sm text-gray-600">Learning page for website</p>
+                </div>
+              </div>
+
+              <div
+                class="flex items-center p-3 rounded-lg cursor-pointer hover:bg-gray-50"
+              >
+                <div
+                  class="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center text-white font-bold mr-3"
+                >
+                  ED
+                </div>
+                <div class="flex-1">
+                  <div class="flex justify-between items-start">
+                    <h3 class="font-medium text-gray-800">Elena Dissy</h3>
+                    <span class="text-xs text-gray-500">2 day</span>
+                  </div>
+                  <p class="text-sm text-gray-600">Learning page for website</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Labels section -->
+            <div class="mt-6">
+              <h3 class="text-sm font-medium text-gray-600 mb-3">Labels</h3>
+              <div class="space-y-2">
+                <div class="flex items-center text-sm text-gray-600">
+                  <div class="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
+                  <span>Inbox</span>
+                  <span class="ml-auto text-xs">299</span>
+                </div>
+                <div class="flex items-center text-sm text-gray-600">
+                  <div class="w-2 h-2 bg-blue-500 rounded-full mr-2"></div>
+                  <span>Starred</span>
+                </div>
+                <div class="flex items-center text-sm text-gray-600">
+                  <div class="w-2 h-2 bg-yellow-500 rounded-full mr-2"></div>
+                  <span>Sent Staff</span>
+                </div>
+                <div class="flex items-center text-sm text-gray-600">
+                  <div class="w-2 h-2 bg-red-500 rounded-full mr-2"></div>
+                  <span>Drafts</span>
+                  <span class="ml-auto text-xs">11</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-1 flex flex-col">
+        <!-- Header du chat -->
+        <div
+          class="bg-white border-b border-gray-200 p-4 flex items-center justify-between"
+        >
+          <div class="flex items-center">
+            <div
+              class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold mr-3"
+            >
+              BD
+            </div>
+            <div>
+              <h2 class="font-semibold text-gray-800">Bingi Dingi</h2>
+              <p class="text-sm text-green-500">10 Minutes</p>
+            </div>
+          </div>
+          <div class="flex items-center space-x-4">
+            <i class="fas fa-phone text-gray-400 cursor-pointer"></i>
+            <i class="fas fa-video text-gray-400 cursor-pointer"></i>
+            <i class="fas fa-ellipsis-v text-gray-400 cursor-pointer"></i>
+          </div>
+        </div>
+
+        <!-- Messages -->
+        <div class="flex-1 p-6 overflow-y-auto bg-gray-50">
+          <div class="space-y-4">
+            <!-- Message système -->
+            <div class="text-center text-sm text-gray-500">
+              Thanks for the fine sharing. That has ever been to a viewing. You
+              can see this as familiar "passing" the business cards.
+            </div>
+
+            <!-- Message de l'utilisateur -->
+            <div class="flex justify-end">
+              <div class="max-w-xs">
+                <div class="bg-blue-600 text-white p-3 rounded-lg">
+                  <p class="text-sm">
+                    Everybody that has ever been to a viewing can recall the all
+                    familiar "passing" the business cards. This powerful
+                    marketing tool is often misunderstood.
+                  </p>
+                </div>
+                <div class="flex justify-end mt-1">
+                  <span class="text-xs text-gray-500">10:30</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Message reçu -->
+            <div class="flex justify-start">
+              <div class="max-w-xs">
+                <div class="bg-white border p-3 rounded-lg shadow-sm">
+                  <p class="text-sm text-gray-800">
+                    Everybody that has ever been to a viewing can recall the all
+                    familiar "passing" the business cards. This powerful
+                    marketing tool is often
+                  </p>
+                </div>
+                <div class="flex justify-start mt-1">
+                  <span class="text-xs text-gray-500">10:32</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Zone de saisie -->
+        <div class="bg-white border-t border-gray-200 p-4">
+          <div class="flex items-center space-x-3">
+            <i class="fas fa-paperclip text-gray-400 cursor-pointer"></i>
+            <div class="flex-1 bg-gray-100 rounded-full px-4 py-2">
+              <input
+                type="text"
+                placeholder="Type message here..."
+                class="w-full bg-transparent outline-none text-sm"
+              />
+            </div>
+            <div class="bg-blue-600 p-2 rounded-full cursor-pointer">
+              <i class="fas fa-paper-plane text-white"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

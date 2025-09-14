@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Font Awesome Solid -->
+
+    <link rel="stylesheet" href="css/all.css" />
+    <!-- Font Awesome Solid -->
+    <style>
+      svg#freepik_stories-robot-face:not(.animated) .animable {
+        opacity: 0;
+      }
+      svg#freepik_stories-robot-face.animated #freepik--Floor--inject-213 {
+        animation: 3s Infinite linear floating;
+        animation-delay: 0s;
+      }
+      svg#freepik_stories-robot-face.animated #freepik--Gears--inject-213 {
+        animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideLeft;
+        animation-delay: 0s;
+      }
+      svg#freepik_stories-robot-face.animated #freepik--robot-face--inject-213 {
+        animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideLeft,
+          1.5s Infinite linear floating;
+        animation-delay: 0s, 1s;
+      }
+      @keyframes floating {
+        0% {
+          opacity: 1;
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0px);
+        }
+      }
+      @keyframes slideLeft {
+        0% {
+          opacity: 0;
+          transform: translateX(-30px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      .animator-hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-200">
+    <nav
+      class="fixed z-3 top-0 left-[6vw] w-[94vw] flex justify-between items-center p-3 px-8 bg-gray-50 shadow-lg max-w-[90vw] mx-auto border-l-2 border-l-black/10 border-r-2 border-r-black/10"
+    >
+      <div
+        class="w-120 font-seminold flex items-center justify-between pt-1 pl-1"
+      >
+        <h1 class="font-bold text-2xl mr-10">Shopmad</h1>
+
+        <a href="./index.html" class="flex items-center gap-1"
+          ><i class="fa fa-home text-2xl"></i
+        ></a>
+        <a href="#" class="flex items-center gap-1"
+          ><i class="fa fa-users text-2xl"></i
+        ></a>
+        <a href="./message.html" class="flex items-center gap-1">
+          <i class="fa-solid fa-comments text-2xl"></i>
+        </a>
+        <a href="#" class="relative"
+          ><i class="fa fa-bell text-2xl"></i>
+          <span
+            class="absolute -top-2 left-5 inline-flex items-center justify-center h-5 min-w-5 rounded-full bg-red-500 text-white px-1 text-xs font-mono tabular-nums"
+          >
+            8
+          </span></a
+        >
+        <!-- <a href="#"><i class="fa-solid fa-list text-2xl"></i></a> -->
+      </div>
+      <div class="w-100 flex items-center justify-between">
+        <input
+          type="text"
+          name=""
+          class="border w-68 rounded-2xl pl-4 p-1 cursor-pointer border-gray-300"
+          id=""
+          placeholder="Creer une vente"
+        />
+        <button class="w-24 font-semibold cursor-pointer text-blue-500">
+          Echanger ?
+        </button>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="#" class="flex items-center gap-1">
+          <i class="fa-regular fa-user text-2xl text-blue-500"></i>
+        </a>
+        <a href="#" class="flex items-center gap-1">
+          <i class="fa-solid fa-right-to-bracket text-2xl"></i>
+        </a>
+      </div>
+    </nav>
+    <!-- Profil info -->
+    <div
+      class="relative w-full max-w-6xl mx-auto h-62 bg-white mt-20 mb-8 overflow-hidden rounded-md"
+    >
+      <div class="pdp flex p-4 px-10 gap-10">
+        <div class="relative">
+          <img
+            src="./jinwoo.jpeg"
+            class="w-40 h-50 rounded-full object-cover"
+            alt=""
+          />
+          <span class="absolute right-0 bottom-1"
+            ><i
+              class="fa-solid fa-camera text-4xl text-blue-500 cursor-pointer"
+            ></i
+          ></span>
+        </div>
+        <div class="w-110 flex flex-col justify-center gap-2">
+          <div class="font-bold text-2xl">John Doe</div>
+          <div>Ceci est une courte Bio ou Description a propos de moi</div>
+          <div class="font-semibold">
+            520<i
+              class="fa-regular fa-star text-lg ml-1 mr-2 text-yellow-500"
+            ></i>
+            obtenu(s)
+          </div>
+          <button
+            class="border w-32 h-10 font-semibold bg-blue-500 text-white mt-2 rounded-md"
+          >
+            Modifier profil
+          </button>
+        </div>
+        <!-- Stats -->
+        <div class="flex gap-4 bg-white rounded-lg w-100">
+          <!-- Stat 1 -->
+          <div class="flex flex-col justify-between p-4 rounded-lg w-full">
+            <div>
+              <div class="text-sm text-gray-500">Vente éfféctuée</div>
+              <div class="text-2xl font-bold text-gray-900 mb-2 text-green-600">
+                20
+              </div>
+              <div class="text-sm text-gray-500">Vente en cours</div>
+              <div
+                class="text-2xl font-bold text-gray-900 mb-2 text-orange-500"
+              >
+                12
+              </div>
+              <div class="text-2xl font-bold text-gray-900">
+                <span class="font-normal mr-4">Total</span>32
+              </div>
+            </div>
+          </div>
+
+          <!-- Stat 2 -->
+          <div class="flex flex-col justify-between p-4 rounded-lg w-full">
+            <div>
+              <div class="text-sm text-gray-500">Echange éfféctuée</div>
+              <div class="text-2xl font-bold text-gray-900 mb-2 text-green-600">
+                3
+              </div>
+              <div class="text-sm text-gray-500">Echange en cours</div>
+              <div class="text-2xl font-bold text-gray-900 mb-2">0</div>
+              <div class="text-2xl font-bold text-gray-900">
+                <span class="font-normal mr-4">Total</span>3
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Search bar -->
+    <div
+      class="relative w-full bg-white max-w-6xl mx-auto mt-1 pb-1 px-4 h-14 flex gap-4 items-center justify-between rounded-lg"
+    >
+      <div class="flex gap-4">
+        <button
+          class="w-30 h-8 flex items-center rounded-lg text-white font-semibold justify-center bg-blue-500"
+        >
+          Tous
+        </button>
+        <button
+          class="w-30 h-8 flex items-center rounded-lg border border-dashed border-blue-500 text-blue-800 font-semibold justify-center bg-white"
+        >
+          Mes ventes
+        </button>
+        <button
+          class="w-30 h-8 flex items-center rounded-lg border border-dashed border-blue-500 text-blue-800 font-semibold justify-center"
+        >
+          Mes echanges
+        </button>
+      </div>
+      <select
+        class="ml-10 mt-2 block w-fit rounded-xl border border-gray-400 bg-white px-3 py-1 text-sm font-medium text-gray-800 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+      >
+        <option value="all">Tous les categories</option>
+        <option value="electronics" class="text-blue-600">Electronics</option>
+        <option value="shoes" class="text-amber-800">Shoes</option>
+        <option value="clothes" class="text-green-800">Clothes</option>
+      </select>
+
+      <form action="" method="post" class="flex gap-2 items-center">
+        <input
+          type="search"
+          class="border rounded-lg border-black/10 px-2 w-80"
+          name=""
+          id=""
+          placeholder="search"
+        />
+        <button type="button" class="w-24 bg-yellow-700 text-white rounded-lg">
+          search
+        </button>
+      </form>
+    </div>
+    <!-- Products -->
+    <div
+      class="max-w-6xl mx-auto rounded-xl -mt-1 overflow-hidden"
+    >
+      <!-- <div class="category w-full h-200 flex flex-col pl-10 pt-10">
+        <h1 class="font-bold">Category</h1>
+        <ul class="ml-10 flex flex-col gap-2 mt-2">
+          <li
+            class="flex items-center justify-center rounded-xl border border-black/60 bg-white text-black px-2 py-0.5 text-sm font-medium w-fit whitespace-nowrap shrink-0 gap-1 transition-colors"
+          >
+            Tous les categories
+          </li>
+          <li
+            class="flex items-center justify-center rounded-xl border border-blue-500/60 bg-white text-blue-600 px-2 py-0.5 text-sm font-medium w-fit whitespace-nowrap shrink-0 gap-1 transition-colors"
+          >
+            Electronics
+          </li>
+          <li
+            class="flex items-center justify-center rounded-xl border border-amber-800/60 bg-white text-amber-800 px-2 py-0.5 text-sm font-medium w-fit whitespace-nowrap shrink-0 gap-1 transition-colors"
+          >
+            Shoes
+          </li>
+          <li
+            class="flex items-center justify-center rounded-xl border border-green-800/60 bg-white text-green-800 px-2 py-0.5 text-sm font-medium w-fit whitespace-nowrap shrink-0 gap-1 transition-colors"
+          >
+            Clothes
+          </li>
+        </ul>
+      </div> -->
+      <div>
+        <div
+          class="bg-white list-products grid grid-cols-4 p-6 gap-4 overflow-hidden"
+        >
+          <div class="card flex flex-col p-1 gap-1 pb-2 border rounded-xl">
+            <div class="vendeur m-1 flex items-center gap-2">
+              <img
+                src="/jinwoo.jpeg"
+                class="w-12 h-12 rounded-full object-cover"
+                alt=""
+              />
+              <span class="name font-bold flex flex-col text-lg">
+                <span>John Doe</span>
+                <span class="font-normal text-xs">1 min</span>
+              </span>
+              <i class="fa-solid fa-xmark ml-auto"></i>
+            </div>
+            <span class="flex items-center ml-4 mb-1"
+              ><i
+                class="fa-regular fa-money-bill-1 text-xl mr-2 text-green-600"
+              ></i
+              >prix : <b class="ml-2 text-blue-500">38999.0 AR</b></span
+            >
+            <div class="w-full flex justify-between pt-1">
+              <span class="ml-4"
+                ><i class="fa-solid fa-gauge-high text-xl text-orange-500"></i>
+                stock : <span class="text-blue-500 font-bold">2</span></span
+              >
+              <span
+                class="flexitems-center justify-center rounded-xl border border-blue-500/60 bg-white text-blue-600 px-2 py-0.5 text-sm font-medium w-fit whitespace-nowrap shrink-0 gap-1 transition-colors"
+              >
+                Electronics
+              </span>
+            </div>
+            <h3 class="font-semibold ml-4 mb-1">Casque Bluetooth</h3>
+            <div class="">
+              <img
+                src="./headsound.png"
+                class="w-[84%] h-40 ml-[8%] rounded-xl p-6 border"
+                alt=""
+              />
+            </div>
+            <div class="flex w-full justify-between px-4 pt-1">
+              <span
+                ><i class="fa-regular fa-star text-2xl text-yellow-500"></i>
+                <span class="font-bold">5</span></span
+              >
+            </div>
+          </div>
+          <div class="card flex flex-col p-1 gap-1 pb-2 border rounded-xl">
+            <div class="vendeur m-1 flex items-center gap-2">
+              <img
+                src="/jinwoo.jpeg"
+                class="w-12 h-12 rounded-full object-cover"
+                alt=""
+              />
+              <span class="name font-bold flex flex-col text-lg">
+                <span>John Doe</span>
+                <span class="font-normal text-xs">1 min</span>
+              </span>
+              <i class="fa-solid fa-xmark ml-auto"></i>
+            </div>
+            <span class="flex items-center ml-4 mb-1"
+              ><i
+                class="fa-regular fa-money-bill-1 text-xl mr-2 text-green-600"
+              ></i
+              >prix : <b class="ml-2 text-blue-500">38999.0 AR</b></span
+            >
+            <div class="w-full flex justify-between pt-1">
+              <span class="ml-4"
+                ><i class="fa-solid fa-gauge-high text-xl text-orange-500"></i>
+                stock : <span class="text-blue-500 font-bold">2</span></span
+              >
+              <span
+                class="flexitems-center justify-center rounded-xl border border-blue-500/60 bg-white text-blue-600 px-2 py-0.5 text-sm font-medium w-fit whitespace-nowrap shrink-0 gap-1 transition-colors"
+              >
+                Electronics
+              </span>
+            </div>
+            <h3 class="font-semibold ml-4 mb-1">Casque Bluetooth</h3>
+            <div class="">
+              <img
+                src="./headsound.png"
+                class="w-[84%] h-40 ml-[8%] rounded-xl p-6 border"
+                alt=""
+              />
+            </div>
+            <div class="flex w-full justify-between px-4 pt-1">
+              <span
+                ><i class="fa-regular fa-star text-2xl text-yellow-500"></i>
+                <span class="font-bold">5</span></span
+              >
+            </div>
+          </div>
+          <div class="card flex flex-col p-1 gap-1 pb-2 border rounded-xl">
+            <div class="vendeur m-1 flex items-center gap-2">
+              <img
+                src="/jinwoo.jpeg"
+                class="w-12 h-12 rounded-full object-cover"
+                alt=""
+              />
+              <span class="name font-bold flex flex-col text-lg">
+                <span>John Doe</span>
+                <span class="font-normal text-xs">1 min</span>
+              </span>
+              <i class="fa-solid fa-xmark ml-auto"></i>
+            </div>
+            <span class="flex items-center ml-4 mb-1"
+              ><i
+                class="fa-regular fa-money-bill-1 text-xl mr-2 text-green-600"
+              ></i
+              >prix : <b class="ml-2 text-blue-500">38999.0 AR</b></span
+            >
+            <div class="w-full flex justify-between pt-1">
+              <span class="ml-4"
+                ><i class="fa-solid fa-gauge-high text-xl text-orange-500"></i>
+                stock : <span class="text-blue-500 font-bold">2</span></span
+              >
+              <span
+                class="flexitems-center justify-center rounded-xl border border-blue-500/60 bg-white text-blue-600 px-2 py-0.5 text-sm font-medium w-fit whitespace-nowrap shrink-0 gap-1 transition-colors"
+              >
+                Electronics
+              </span>
+            </div>
+            <h3 class="font-semibold ml-4 mb-1">Casque Bluetooth</h3>
+            <div class="">
+              <img
+                src="./headsound.png"
+                class="w-[84%] h-40 ml-[8%] rounded-xl p-6 border"
+                alt=""
+              />
+            </div>
+            <div class="flex w-full justify-between px-4 pt-1">
+              <span
+                ><i class="fa-regular fa-star text-2xl text-yellow-500"></i>
+                <span class="font-bold">5</span></span
+              >
+            </div>
+          </div>
+          <div class="card flex flex-col p-1 gap-1 pb-2 border rounded-xl">
+            <div class="vendeur m-1 flex items-center gap-2">
+              <img
+                src="/jinwoo.jpeg"
+                class="w-12 h-12 rounded-full object-cover"
+                alt=""
+              />
+              <span class="name font-bold flex flex-col text-lg">
+                <span>John Doe</span>
+                <span class="font-normal text-xs">1 min</span>
+              </span>
+              <i class="fa-solid fa-xmark ml-auto"></i>
+            </div>
+            <span class="flex items-center ml-4 mb-1"
+              ><i
+                class="fa-regular fa-money-bill-1 text-xl mr-2 text-green-600"
+              ></i
+              >prix : <b class="ml-2 text-blue-500">38999.0 AR</b></span
+            >
+            <div class="w-full flex justify-between pt-1">
+              <span class="ml-4"
+                ><i class="fa-solid fa-gauge-high text-xl text-orange-500"></i>
+                stock : <span class="text-blue-500 font-bold">2</span></span
+              >
+              <span
+                class="flexitems-center justify-center rounded-xl border border-blue-500/60 bg-white text-blue-600 px-2 py-0.5 text-sm font-medium w-fit whitespace-nowrap shrink-0 gap-1 transition-colors"
+              >
+                Electronics
+              </span>
+            </div>
+            <h3 class="font-semibold ml-4 mb-1">Casque Bluetooth</h3>
+            <div class="">
+              <img
+                src="./headsound.png"
+                class="w-[84%] h-40 ml-[8%] rounded-xl p-6 border"
+                alt=""
+              />
+            </div>
+            <div class="flex w-full justify-between px-4 pt-1">
+              <span
+                ><i class="fa-regular fa-star text-2xl text-yellow-500"></i>
+                <span class="font-bold">5</span></span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="pagination">
+          <nav
+            role="navigation"
+            aria-label="pagination"
+            class="bg-white flex w-full items-center justify-center py-2 pb-4"
+          >
+            <ul class="flex flex-row items-center justify-center gap-1 w-full">
+              <!-- Bouton précédent -->
+              <li>
+                <a
+                  href="#"
+                  class="inline-flex h-9 items-center justify-center rounded-md border border-input bg-background px-3 py-1 text-sm font-medium hover:bg-accent hover:text-accent-foreground"
+                >
+                  Précédent
+                </a>
+              </li>
+
+              <!-- Pages -->
+              <li>
+                <a
+                  href="#"
+                  class="inline-flex h-9 w-9 items-center bg-blue-500 text-white justify-center rounded-md border border-input border-gray-800 bg-background text-sm font-medium hover:bg-accent hover:text-accent-foreground"
+                >
+                  1
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  aria-current="page"
+                  class="inline-flex h-9 w-9 items-center justify-center rounded-md border border-input bg-muted font-medium text-muted-foreground"
+                >
+                  2
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="inline-flex h-9 w-9 items-center justify-center rounded-md border border-input bg-background text-sm font-medium hover:bg-accent hover:text-accent-foreground"
+                >
+                  3
+                </a>
+              </li>
+
+              <!-- Ellipsis -->
+              <li>
+                <span class="flex h-9 w-9 items-center justify-center">…</span>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  class="inline-flex h-9 w-9 items-center justify-center rounded-md border border-input bg-background text-sm font-medium hover:bg-accent hover:text-accent-foreground"
+                >
+                  10
+                </a>
+              </li>
+
+              <!-- Bouton suivant -->
+              <li>
+                <a
+                  href="#"
+                  class="inline-flex h-9 items-center justify-center rounded-md border border-input bg-background px-3 py-1 text-sm font-medium hover:bg-accent hover:text-accent-foreground"
+                >
+                  Suivant
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- Our recommendation et remises -->
+    <div
+      class="flex flex-col w-[90vw] mx-auto mt-6 bg-white rounded-xl p-6 h-[80vh]"
+    >
+      <h1 class="text-3xl font-bold">Explore our offers and discounts</h1>
+      <div class="flex">
+        <div class="relative card flex flex-col p-6 gap-1 pb-2">
+          <span
+            class="absolute right-4 top-4 items-center justify-center rounded-xl border border-blue-500/60 bg-white text-blue-600 px-2 py-0.5 text-sm font-medium w-fit whitespace-nowrap shrink-0 gap-1 transition-colors"
+          >
+            Electronics
+          </span>
+
+          <img
+            src="./headsound.png"
+            class="w-full h-60 bg-gray-300 rounded-xl p-2"
+            alt=""
+          />
+          <h3 class="font-semibold">Headphone</h3>
+          <div class="flex flex-col w-full justify-center items-center px-4">
+            <span>⭐⭐⭐⭐⭐</span>
+            <span class="font-semibold">38999.0 AR</span>
+          </div>
+          <div class="w-full flex justify-around mt-1">
+            <button
+              class="border rounded-3xl px-2 py-1 font-semibold"
+              type="button"
+            >
+              Add to Chart
+            </button>
+          </div>
+        </div>
+        <div class="relative card flex flex-col p-3 gap-1 pb-2">
+          <span
+            class="absolute right-4 top-4 items-center justify-center rounded-xl border border-blue-500/60 bg-white text-blue-600 px-2 py-0.5 text-sm font-medium w-fit whitespace-nowrap shrink-0 gap-1 transition-colors"
+          >
+            Electronics
+          </span>
+
+          <img
+            src="./headsound.png"
+            class="w-full h-50 bg-gray-300 rounded-xl p-6"
+            alt=""
+          />
+          <h3 class="font-semibold">Headphone</h3>
+          <div class="flex w-full justify-between px-2">
+            <span>⭐ 5.2 (1.2k Reviews)</span>
+            <span class="font-semibold">38999.0 AR</span>
+          </div>
+          <div class="w-full flex justify-around mt-1">
+            <button
+              class="border rounded-3xl px-2 py-1 font-semibold"
+              type="button"
+            >
+              Add to Chart
+            </button>
+          </div>
+        </div>
+        <div class="relative card flex flex-col p-3 gap-1 pb-2">
+          <span
+            class="absolute right-4 top-4 items-center justify-center rounded-xl border border-blue-500/60 bg-white text-blue-600 px-2 py-0.5 text-sm font-medium w-fit whitespace-nowrap shrink-0 gap-1 transition-colors"
+          >
+            Electronics
+          </span>
+
+          <img
+            src="./headsound.png"
+            class="w-full h-50 bg-gray-300 rounded-xl p-6"
+            alt=""
+          />
+          <h3 class="font-semibold">Headphone</h3>
+          <div class="flex w-full justify-between px-2">
+            <span>⭐ 5.2 (1.2k Reviews)</span>
+            <span class="font-semibold">38999.0 AR</span>
+          </div>
+          <div class="w-full flex justify-around mt-1">
+            <button
+              class="border rounded-3xl px-2 py-1 font-semibold"
+              type="button"
+            >
+              Add to Chart
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="w-[94%] mx-auto h-[30vh] mt-6 bg-black rounded-xl"></div>
+    </div>
+    <!-- <script src="./index.js"></script> -->
+  </body>
+</html>
