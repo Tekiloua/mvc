@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Font Awesome Solid -->
+
+    <link rel="stylesheet" href="css/all.css" />
+    <!-- Font Awesome Solid -->
+  </head>
+  <body class="bg-gray-200">
+    <nav
+      class="fixed z-3 top-0 left-[6vw] w-[94vw] flex justify-between items-center p-3 px-8 bg-gray-50 shadow-lg max-w-[90vw] mx-auto border-l-2 border-l-black/10 border-r-2 border-r-black/10"
+    >
+      <div
+        class="w-120 font-seminold flex items-center justify-between pt-1 pl-1"
+      >
+        <h1 class="font-bold text-2xl mr-10">Shopmad</h1>
+
+        <a href="./index.html" class="flex items-center gap-1"
+          ><i class="fa fa-home text-2xl"></i
+        ></a>
+        <a href="#" class="flex items-center gap-1"
+          ><i class="fa fa-users text-2xl"></i
+        ></a>
+        <a href="./message.html" class="flex items-center gap-1">
+          <i class="fa-solid fa-comments text-2xl"></i>
+        </a>
+        <a href="./notification.html" class="relative"
+          ><i class="fa fa-bell text-2xl"></i>
+          <span
+            class="absolute -top-2 left-5 inline-flex items-center justify-center h-5 min-w-5 rounded-full bg-red-500 text-white px-1 text-xs font-mono tabular-nums"
+          >
+            8
+          </span></a
+        >
+        <!-- <a href="#"><i class="fa-solid fa-list text-2xl"></i></a> -->
+      </div>
+      <div class="w-100 flex items-center justify-between">
+        <input
+          type="text"
+          name=""
+          class="border w-68 rounded-2xl pl-4 p-1 cursor-pointer border-gray-300"
+          id=""
+          placeholder="Creer une vente"
+        />
+        <button class="w-24 font-semibold cursor-pointer text-blue-500">
+          Echanger ?
+        </button>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="./profile2.html" class="flex items-center gap-1">
+          <i class="fa-regular fa-user text-2xl text-blue-500"></i>
+        </a>
+        <a href="#" class="flex items-center gap-1">
+          <i class="fa-solid fa-right-to-bracket text-2xl"></i>
+        </a>
+      </div>
+    </nav>
+    <div class="p-6 mt-20">
+      <!-- Main Container -->
+      <div
+        class="max-w-6xl mx-auto bg-white rounded-2xl shadow-2xl overflow-hidden"
+      >
+        <div class="flex">
+          <!-- Main Content -->
+          <div class="flex-1">
+            <!-- Header -->
+            <div
+              class="bg-gradient-to-r from-blue-500 via-blue-400 to-blue-300 px-6 py-4"
+            >
+              <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                  <h1 class="text-white text-xl font-semibold">Profile</h1>
+                </div>
+              </div>
+            </div>
+
+            <!-- Profile Edit Form -->
+            <div class="max-w-4xl mx-auto p-8 rounded-lg shadow-sm flex gap-8">
+              <div
+                class="flex flex-col items-center justify-center w-[25%] gap-6"
+              >
+              <h3 class="font-bold text-xl">Photo de profile</h3>
+                <img
+                  src="./jinwoo.jpeg"
+                  class="h-50 w-50 rounded-full object-cover"
+                  alt=""
+                />
+                <button class="font-semibold border w-40 rounded-md bg-blue-500 text-white p-2">
+                  Importer photo
+                </button>
+              </div>
+              <div class="w-[70%] mx-[5%]">
+                <!-- Colonne gauche -->
+                <div class="space-y-6">
+                  <!-- Champ nom complet -->
+                  <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2"
+                      >Nom d'utilisateur</label
+                    >
+                    <input
+                      type="text"
+                      value="John Doe"
+                      class="w-full px-4 py-3 border border-blue-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
+                    />
+                  </div>
+                  <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2"
+                      >Bio</label
+                    >
+                    <input
+                      type="text"
+                      value="John Doe"
+                      class="w-full px-4 py-3 border border-blue-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
+                    />
+                  </div>
+                  <!-- Champ mot de passe -->
+                  <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2"
+                      >Nouveau mot de passe</label
+                    >
+                    <div class="relative">
+                      <input
+                        type="password"
+                        placeholder="••••••••••••••"
+                        class="w-full px-4 py-3 border border-blue-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none pr-12"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2"
+                      >Confirmez mot de passe</label
+                    >
+                    <div class="relative">
+                      <input
+                        type="password"
+                        placeholder="••••••••••"
+                        class="w-full px-4 py-3 border border-blue-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none pr-12"
+                      />
+                    </div>
+                  </div>
+                  <!-- Boutons Accept/Decline -->
+                  <div class="flex space-x-3">
+                    <button
+                      class="px-6 py-2 bg-green-100 text-green-700 rounded-lg border border-green-300 hover:bg-green-200 transition-colors flex items-center space-x-2"
+                    >
+                      <i class="fas fa-check text-sm"></i>
+                      <span>Accepter</span>
+                    </button>
+                    <button
+                      class="px-6 py-2 bg-red-100 text-red-700 rounded-lg border border-red-300 hover:bg-red-200 transition-colors flex items-center space-x-2"
+                    >
+                      <i class="fas fa-times text-sm"></i>
+                      <span>Annuler</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

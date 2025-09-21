@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Font Awesome Solid -->
+
+    <link rel="stylesheet" href="css/all.css" />
+    <!-- Font Awesome Solid -->
+  </head>
+  <body class="bg-gray-50 min-h-screen">
+    <nav
+      class="fixed z-3 top-0 left-[6vw] w-[94vw] flex justify-between items-center p-3 px-8 bg-gray-50 shadow-lg max-w-[90vw] mx-auto border-l-2 border-l-black/10 border-r-2 border-r-black/10"
+    >
+      <div
+        class="w-120 font-seminold flex items-center justify-between pt-1 pl-1"
+      >
+        <h1 class="font-bold text-2xl mr-10">Shopmad</h1>
+
+        <a href="./index.html" class="flex items-center gap-1"
+          ><i class="fa fa-home text-2xl"></i
+        ></a>
+        <a href="#" class="flex items-center gap-1"
+          ><i class="fa fa-ranking-star text-2xl text-blue-500"></i
+        ></a>
+        <a href="./message.html" class="flex items-center gap-1">
+          <i class="fa-solid fa-comments text-2xl"></i>
+        </a>
+        <a href="./notification.html" class="relative"
+          ><i class="fa fa-bell text-2xl"></i>
+          <span
+            class="absolute -top-2 left-5 inline-flex items-center justify-center h-5 min-w-5 rounded-full bg-red-500 text-white px-1 text-xs font-mono tabular-nums"
+          >
+            8
+          </span></a
+        >
+        <!-- <a href="#"><i class="fa-solid fa-list text-2xl"></i></a> -->
+      </div>
+      <div class="w-100 flex items-center justify-between">
+        <input
+          type="text"
+          name=""
+          class="border w-68 rounded-2xl pl-4 p-1 cursor-pointer border-gray-300"
+          id=""
+          placeholder="Creer une vente"
+        />
+        <button class="w-24 font-semibold cursor-pointer text-blue-600">
+          Echanger ?
+        </button>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="./profile2.html" class="flex items-center gap-1">
+          <i class="fa-regular fa-user text-2xl text-yellow-700"></i>
+        </a>
+        <a href="#" class="flex items-center gap-1">
+          <i class="fa-solid fa-right-to-bracket text-2xl"></i>
+        </a>
+      </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto px-6 py-8 mt-20">
+      <!-- Title and filters -->
+      <div class="flex items-center justify-center mb-6">
+        <h1 class="text-2xl font-bold text-gray-900">
+          <i class="fa-solid fa-trophy mr-2 text-2xl text-yellow-500"></i>
+          Classements
+        </h1>
+      </div>
+
+      <!-- Top 3 Contributors Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+        <!-- Card 1 -->
+        <div
+          class="relative bg-white rounded-xl shadow-lg border border-gray-400 mt-5 pt-5 text-center"
+        >
+          <span class="text-3xl font-bold absolute top-4 left-4">2</span>
+
+          <img
+            src="./gojo.jpeg"
+            alt="Gojo Satoru"
+            class="w-20 h-20 rounded-full object-cover mx-auto mb-4"
+          />
+          <h3 class="font-semibold text-gray-900 mb-1 text-xl">Gojo Satoru</h3>
+          <p class="text-gray-500 text-sm font-semibold mb-4">
+            1,3K <i class="fa-regular fa-star mr-2"> </i>obtenus
+          </p>
+          <div
+            class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium mb-6"
+          >
+            268 Contributions
+          </div>
+
+          <div class="flex justify-around text-center">
+            <div>
+              <div class="text-2xl font-bold text-gray-900">120</div>
+            </div>
+            <div>
+              <div class="text-2xl font-bold text-blue-600">307</div>
+            </div>
+            <div>
+              <div class="text-2xl font-bold text-gray-900">358</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="relative bg-white rounded-xl shadow-lg border border-gray-400 p-6 text-center"
+        >
+          <span class="text-3xl font-bold absolute top-4 left-4">1</span>
+          <img
+            src="./jinwoo.jpeg"
+            alt="Sebastian Machel"
+            class="w-20 h-20 object-cover rounded-full mx-auto mb-4"
+          />
+          <h3 class="font-semibold text-xl text-gray-900 mb-1">Sung Jinwoo</h3>
+          <p class="text-gray-500 text-sm font-semibold mb-4">
+            1,3K <i class="fa-regular fa-star mr-2"> </i>obtenus
+          </p>
+          <div
+            class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium mb-6"
+          >
+            268 Contributions
+          </div>
+
+          <div class="flex justify-around text-center">
+            <div>
+              <div class="font-bold">Echanges</div>
+              <div class="text-2xl font-bold text-gray-900">94</div>
+            </div>
+            <div>
+              <div class="font-bold">Ventes</div>
+              <div class="text-2xl font-bold text-gray-900">138</div>
+            </div>
+            <div>
+              <div class="font-bold">Totals</div>
+              <div class="text-2xl font-bold text-green-600">268</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="bg-white rounded-xl shadow-sm border border-gray-400 mt-5 pt-5 text-center"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?w=80&h=80&fit=crop&crop=face&auto=format"
+            alt="Milosz Pasterniak"
+            class="w-20 h-20 rounded-full mx-auto mb-4"
+          />
+          <h3 class="font-semibold text-gray-900 mb-1">Milosz Pasterniak</h3>
+          <p class="text-gray-500 text-sm mb-4">Developer</p>
+          <div
+            class="bg-teal-100 text-teal-700 px-3 py-1 rounded-full text-sm font-medium mb-6"
+          >
+            550 Contributions
+          </div>
+
+          <div class="flex justify-around text-center">
+            <div>
+              <div class="text-2xl font-bold text-gray-900">87</div>
+            </div>
+            <div>
+              <div class="text-2xl font-bold text-blue-600">334</div>
+            </div>
+            <div>
+              <div class="text-2xl font-bold text-gray-900">142</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Table Headers -->
+      <div class="bg-white rounded-t-xl border border-gray-200">
+        <div
+          class="grid grid-cols-6 gap-4 px-6 py-4 border-b border-gray-200 text-sm font-medium text-gray-500 uppercase tracking-wider"
+        >
+          <div class="col-span-2">Nom et position</div>
+          <div class="text-center">Contributions</div>
+          <div class="text-center">Ventes</div>
+          <div class="text-center">Echanges</div>
+          <div class="text-center">
+            <i class="fa-regular fa-star"></i> Etoiles
+          </div>
+        </div>
+
+        <!-- Table Rows -->
+        <div class="divide-y divide-gray-200">
+          <!-- Row 1 -->
+          <div
+            class="grid grid-cols-6 gap-4 px-6 py-4 items-center hover:bg-gray-50 transition-colors"
+          >
+            <div class="col-span-2 flex items-center space-x-3">
+              <span class="text-gray-400 text-sm">4</span>
+              <img
+                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=40&h=40&fit=crop&crop=face&auto=format"
+                alt="Tomasz Porostowski"
+                class="w-10 h-10 rounded-full"
+              />
+              <div>
+                <div class="font-medium text-gray-900">Tomasz Porostowski</div>
+                <div class="text-gray-500 text-sm">Designer</div>
+              </div>
+            </div>
+            <div class="text-center">
+              <span
+                class="bg-teal-100 text-teal-700 px-2 py-1 rounded text-sm font-medium"
+                >413 Contributions</span
+              >
+            </div>
+            <div class="text-center">
+              <span
+                class="inline-flex items-center justify-center w-8 h-8 bg-gray-100 rounded-full text-sm font-medium text-gray-900"
+                >72</span
+              >
+            </div>
+            <div class="text-center">
+              <span class="text-gray-900 font-medium">245</span>
+            </div>
+            <div class="text-center">
+              <span class="text-gray-900 font-medium">103</span>
+            </div>
+          </div>
+
+          <!-- Row 2 -->
+          <div
+            class="grid grid-cols-6 gap-4 px-6 py-4 items-center hover:bg-gray-50 transition-colors"
+          >
+            <div class="col-span-2 flex items-center space-x-3">
+              <span class="text-gray-400 text-sm">5</span>
+              <img
+                src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=40&h=40&fit=crop&crop=face&auto=format"
+                alt="Jakub Bartczuk"
+                class="w-10 h-10 rounded-full"
+              />
+              <div>
+                <div class="font-medium text-gray-900">Jakub Bartczuk</div>
+                <div class="text-gray-500 text-sm">Developer</div>
+              </div>
+            </div>
+            <div class="text-center">
+              <span
+                class="bg-teal-100 text-teal-700 px-2 py-1 rounded text-sm font-medium"
+                >349 Contributions</span
+              >
+            </div>
+            <div class="text-center">
+              <span
+                class="inline-flex items-center justify-center w-8 h-8 bg-gray-100 rounded-full text-sm font-medium text-gray-900"
+                >69</span
+              >
+            </div>
+            <div class="text-center">
+              <span class="text-gray-900 font-medium">236</span>
+            </div>
+            <div class="text-center">
+              <span class="text-gray-900 font-medium">97</span>
+            </div>
+          </div>
+
+          <!-- Row 3 -->
+          <div
+            class="grid grid-cols-6 gap-4 px-6 py-4 items-center hover:bg-gray-50 transition-colors"
+          >
+            <div class="col-span-2 flex items-center space-x-3">
+              <span class="text-gray-400 text-sm">6</span>
+              <img
+                src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=40&h=40&fit=crop&crop=face&auto=format"
+                alt="Grzegorz Zawada"
+                class="w-10 h-10 rounded-full"
+              />
+              <div>
+                <div class="font-medium text-gray-900">Grzegorz Zawada</div>
+                <div class="text-gray-500 text-sm">Designer</div>
+              </div>
+            </div>
+            <div class="text-center">
+              <span
+                class="bg-teal-100 text-teal-700 px-2 py-1 rounded text-sm font-medium"
+                >337 Contributions</span
+              >
+            </div>
+            <div class="text-center">
+              <span
+                class="inline-flex items-center justify-center w-8 h-8 bg-gray-100 rounded-full text-sm font-medium text-gray-900"
+                >64</span
+              >
+            </div>
+            <div class="text-center">
+              <span class="text-gray-900 font-medium">211</span>
+            </div>
+            <div class="text-center">
+              <span class="text-gray-900 font-medium">85</span>
+            </div>
+          </div>
+
+          <!-- Row 4 -->
+          <div
+            class="grid grid-cols-6 gap-4 px-6 py-4 items-center hover:bg-gray-50 transition-colors"
+          >
+            <div class="col-span-2 flex items-center space-x-3">
+              <span class="text-gray-400 text-sm">7</span>
+              <img
+                src="https://images.unsplash.com/photo-1507591064344-4c6ce005b128?w=40&h=40&fit=crop&crop=face&auto=format"
+                alt="Krzysztof Zawoja"
+                class="w-10 h-10 rounded-full"
+              />
+              <div>
+                <div class="font-medium text-gray-900">Krzysztof Zawoja</div>
+                <div class="text-gray-500 text-sm">Developer</div>
+              </div>
+            </div>
+            <div class="text-center">
+              <span
+                class="bg-teal-100 text-teal-700 px-2 py-1 rounded text-sm font-medium"
+                >248 Contributions</span
+              >
+            </div>
+            <div class="text-center">
+              <span
+                class="inline-flex items-center justify-center w-8 h-8 bg-gray-100 rounded-full text-sm font-medium text-gray-900"
+                >85</span
+              >
+            </div>
+            <div class="text-center">
+              <span class="text-gray-900 font-medium">135</span>
+            </div>
+            <div class="text-center">
+              <span class="text-gray-900 font-medium">70</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

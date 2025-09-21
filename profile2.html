@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Font Awesome Solid -->
+
+    <link rel="stylesheet" href="css/all.css" />
+    <!-- Font Awesome Solid -->
+  </head>
+  <body class="min-h-screen bg-gray-200">
+    <nav
+      class="fixed z-3 top-0 left-[6vw] w-[94vw] flex justify-between items-center p-3 px-8 bg-gray-50 shadow-lg max-w-[90vw] mx-auto border-l-2 border-l-black/10 border-r-2 border-r-black/10"
+    >
+      <div
+        class="w-120 font-seminold flex items-center justify-between pt-1 pl-1"
+      >
+        <h1 class="font-bold text-2xl mr-10">Shopmad</h1>
+
+        <a href="./index.html" class="flex items-center gap-1"
+          ><i class="fa fa-home text-2xl"></i
+        ></a>
+        <a href="./users-list.html" class="flex items-center gap-1"
+          ><i class="fa-solid fa-ranking-star text-2xl"></i
+        ></a>
+        <a href="./message.html" class="flex items-center gap-1">
+          <i class="fa-solid fa-comments text-2xl"></i>
+        </a>
+        <a href="./notification.html" class="relative"
+          ><i class="fa fa-bell text-2xl"></i>
+          <span
+            class="absolute -top-2 left-5 inline-flex items-center justify-center h-5 min-w-5 rounded-full bg-red-500 text-white px-1 text-xs font-mono tabular-nums"
+          >
+            8
+          </span></a
+        >
+        <!-- <a href="#"><i class="fa-solid fa-list text-2xl"></i></a> -->
+      </div>
+      <div class="w-100 flex items-center justify-between">
+        <input
+          type="text"
+          name=""
+          class="border w-68 rounded-2xl pl-4 p-1 cursor-pointer border-gray-300"
+          id=""
+          placeholder="Creer une vente"
+        />
+        <button class="w-24 font-semibold cursor-pointer text-blue-500">
+          Echanger ?
+        </button>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="#" class="flex items-center gap-1">
+          <i class="fa-regular fa-user text-2xl text-blue-500"></i>
+        </a>
+        <a href="#" class="flex items-center gap-1">
+          <i class="fa-solid fa-right-to-bracket text-2xl"></i>
+        </a>
+      </div>
+    </nav>
+    <div class="min-h-screen p-6 mt-20">
+      <!-- Main Container -->
+      <div
+        class="max-w-6xl mx-auto bg-white rounded-2xl shadow-2xl overflow-hidden"
+      >
+        <div class="flex">
+          <!-- Main Content -->
+          <div class="flex-1">
+            <!-- Header -->
+            <div
+              class="bg-gradient-to-r from-blue-500 via-blue-400 to-blue-300 px-6 py-4"
+            >
+              <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                  <h1 class="text-white text-xl font-semibold">Profile</h1>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex">
+              <!-- Profile Content -->
+              <div class="flex-1 p-6">
+                <!-- Profile Header -->
+                <div
+                  class="flex items-center justify-between mb-8 border-b pb-5"
+                >
+                  <div class="flex items-center space-x-4">
+                    <img
+                      src="./jinwoo.jpeg"
+                      alt="Francisco Maia"
+                      class="w-20 h-20 rounded-full object-cover"
+                    />
+                    <div>
+                      <div class="flex items-center space-x-2">
+                        <h2 class="text-2xl font-bold text-gray-900">
+                          Francisco Maia
+                        </h2>
+                        <span
+                          class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full"
+                          >Utilisateur</span
+                        >
+                      </div>
+                      <p class="text-gray-600 ml-2">francisco@example.com</p>
+                      <div class="font-semibold mt-2">
+                        520
+                        <i
+                          class="fa-regular fa-star text-lg ml-1 mr-2 text-yellow-500"
+                        ></i>
+                        obtenu(s)
+                      </div>
+                    </div>
+                  </div>
+                  <a
+                    href="./edit_profile.html"
+                    class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 flex items-center space-x-2"
+                  >
+                    <svg
+                      class="w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 4v16m8-8H4"
+                      ></path>
+                    </svg>
+                    <span>Modifier le profil</span>
+                  </a>
+                </div>
+
+                <div class="list-post grid grid-cols-3 gap-6">
+                  <div class="tweet-item">
+                    <!-- Tweet Container -->
+                    <div
+                      class="bg-white rounded-2xl shadow-2xl border border-gray-400 overflow-hidden"
+                    >
+                      <!-- Tweet Content -->
+                      <div class="p-4">
+                        <!-- User Info -->
+                        <div class="flex items-start justify-between mb-3">
+                          <div class="flex items-center space-x-3">
+                            <div
+                              class="w-12 h-12 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-full flex items-center justify-center border-4 border-white shadow-lg"
+                            >
+                              <div
+                                class="w-8 h-8 bg-white rounded-full flex items-center justify-center"
+                              >
+                                <div
+                                  class="w-6 h-6 bg-cyan-400 rounded-full"
+                                ></div>
+                              </div>
+                            </div>
+                            <div>
+                              <h3 class="text-base font-bold text-gray-900">
+                                Sung Jinwoo
+                              </h3>
+                              <p class="text-sm text-gray-500">@yourname</p>
+                            </div>
+                          </div>
+                          <i class="fa-regular fa-trash-can"></i>
+                        </div>
+
+                        <!-- Tweet Text -->
+                        <div class="mb-4">
+                          <p class="text-gray-900 text-sm leading-relaxed">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed diam nonummy nibh euismod tincidunt ut
+                            laoreet dolore magna aliquam erat volutpat. Ut wisi
+                            enim ad minim veniam,
+                            <span
+                              class="text-cyan-500 hover:underline cursor-pointer"
+                              >@loremipsum</span
+                            >
+                          </p>
+                        </div>
+
+                        <!-- Time and Source -->
+                        <div
+                          class="flex items-center space-x-1 text-xs text-gray-500 mb-3"
+                        >
+                          <span>2:21 PM</span>
+                        </div>
+
+                        <!-- Image Placeholder -->
+                        <div
+                          class="bg-gradient-to-br from-cyan-400 to-blue-500 rounded-2xl h-48 flex flex-col items-center justify-center text-white mb-4 relative overflow-hidden"
+                        >
+                          <img src="./headsound.png" alt="" class="w-48" />
+                        </div>
+
+                        <!-- Engagement Stats -->
+                        <div
+                          class="flex items-center justify-between text-gray-500 border-t border-gray-100 pt-3"
+                        >
+                          <!-- Star -->
+                          <i
+                            class="fa-regular fa-star text-xl text-gray-600"
+                          ></i>
+
+                          <!-- Share -->
+                          <!-- <div
+                            class="hover:text-cyan-500 cursor-pointer transition-colors"
+                          >
+                            <i
+                              class="fa-regular fa-trash-can text-xl text-gray-600"
+                            ></i>
+                          </div> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tweet-item">
+                    <!-- Tweet Container -->
+                    <div
+                      class="bg-white rounded-2xl shadow-2xl border border-gray-400 overflow-hidden"
+                    >
+                      <!-- Tweet Content -->
+                      <div class="p-4">
+                        <!-- User Info -->
+                        <div class="flex items-start justify-between mb-3">
+                          <div class="flex items-center space-x-3">
+                            <div
+                              class="w-12 h-12 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-full flex items-center justify-center border-4 border-white shadow-lg"
+                            >
+                              <div
+                                class="w-8 h-8 bg-white rounded-full flex items-center justify-center"
+                              >
+                                <div
+                                  class="w-6 h-6 bg-cyan-400 rounded-full"
+                                ></div>
+                              </div>
+                            </div>
+                            <div>
+                              <h3 class="text-base font-bold text-gray-900">
+                                Sung Jinwoo
+                              </h3>
+                              <p class="text-sm text-gray-500">@yourname</p>
+                            </div>
+                          </div>
+                          <i class="fa-regular fa-trash-can"></i>
+                        </div>
+
+                        <!-- Tweet Text -->
+                        <div class="mb-4">
+                          <p class="text-gray-900 text-sm leading-relaxed">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed diam nonummy nibh euismod tincidunt ut
+                            laoreet dolore magna aliquam erat volutpat. Ut wisi
+                            enim ad minim veniam,
+                            <span
+                              class="text-cyan-500 hover:underline cursor-pointer"
+                              >@loremipsum</span
+                            >
+                          </p>
+                        </div>
+
+                        <!-- Time and Source -->
+                        <div
+                          class="flex items-center space-x-1 text-xs text-gray-500 mb-3"
+                        >
+                          <span>2:21 PM</span>
+                        </div>
+
+                        <!-- Image Placeholder -->
+                        <div
+                          class="bg-gradient-to-br from-cyan-400 to-blue-500 rounded-2xl h-48 flex flex-col items-center justify-center text-white mb-4 relative overflow-hidden"
+                        >
+                          <img src="./headsound.png" alt="" class="w-48" />
+                        </div>
+
+                        <!-- Engagement Stats -->
+                        <div
+                          class="flex items-center justify-between text-gray-500 border-t border-gray-100 pt-3"
+                        >
+                          <!-- Star -->
+                          <i
+                            class="fa-regular fa-star text-xl text-gray-600"
+                          ></i>
+
+                          <!-- Share -->
+                          <!-- <div
+                            class="hover:text-cyan-500 cursor-pointer transition-colors"
+                          >
+                            <i
+                              class="fa-regular fa-trash-can text-xl text-gray-600"
+                            ></i>
+                          </div> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tweet-item">
+                    <!-- Tweet Container -->
+                    <div
+                      class="bg-white rounded-2xl shadow-2xl border border-gray-400 overflow-hidden"
+                    >
+                      <!-- Tweet Content -->
+                      <div class="p-4">
+                        <!-- User Info -->
+                        <div class="flex items-start justify-between mb-3">
+                          <div class="flex items-center space-x-3">
+                            <div
+                              class="w-12 h-12 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-full flex items-center justify-center border-4 border-white shadow-lg"
+                            >
+                              <div
+                                class="w-8 h-8 bg-white rounded-full flex items-center justify-center"
+                              >
+                                <div
+                                  class="w-6 h-6 bg-cyan-400 rounded-full"
+                                ></div>
+                              </div>
+                            </div>
+                            <div>
+                              <h3 class="text-base font-bold text-gray-900">
+                                Sung Jinwoo
+                              </h3>
+                              <p class="text-sm text-gray-500">@yourname</p>
+                            </div>
+                          </div>
+                          <i class="fa-regular fa-trash-can"></i>
+                        </div>
+
+                        <!-- Tweet Text -->
+                        <div class="mb-4">
+                          <p class="text-gray-900 text-sm leading-relaxed">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed diam nonummy nibh euismod tincidunt ut
+                            laoreet dolore magna aliquam erat volutpat. Ut wisi
+                            enim ad minim veniam,
+                            <span
+                              class="text-cyan-500 hover:underline cursor-pointer"
+                              >@loremipsum</span
+                            >
+                          </p>
+                        </div>
+
+                        <!-- Time and Source -->
+                        <div
+                          class="flex items-center space-x-1 text-xs text-gray-500 mb-3"
+                        >
+                          <span>2:21 PM</span>
+                        </div>
+
+                        <!-- Image Placeholder -->
+                        <div
+                          class="bg-gradient-to-br from-cyan-400 to-blue-500 rounded-2xl h-48 flex flex-col items-center justify-center text-white mb-4 relative overflow-hidden"
+                        >
+                          <img src="./headsound.png" alt="" class="w-48" />
+                        </div>
+
+                        <!-- Engagement Stats -->
+                        <div
+                          class="flex items-center justify-between text-gray-500 border-t border-gray-100 pt-3"
+                        >
+                          <!-- Star -->
+                          <i
+                            class="fa-regular fa-star text-xl text-gray-600"
+                          ></i>
+
+                          <!-- Share -->
+                          <!-- <div
+                            class="hover:text-cyan-500 cursor-pointer transition-colors"
+                          >
+                            <i
+                              class="fa-regular fa-trash-can text-xl text-gray-600"
+                            ></i>
+                          </div> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

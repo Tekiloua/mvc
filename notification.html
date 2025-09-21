@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Font Awesome Solid -->
+
+    <link rel="stylesheet" href="css/all.css" />
+    <!-- Font Awesome Solid -->
+  </head>
+  <body class="bg-gray-50 min-h-screen">
+    <nav
+      class="fixed z-3 top-0 left-[6vw] w-[94vw] flex justify-between items-center p-3 px-8 bg-gray-50 shadow-lg max-w-[90vw] mx-auto border-l-2 border-l-black/10 border-r-2 border-r-black/10"
+    >
+      <div
+        class="w-120 font-seminold flex items-center justify-between pt-1 pl-1"
+      >
+        <h1 class="font-bold text-2xl mr-10">Shopmad</h1>
+
+        <a href="./index.html" class="flex items-center gap-1"
+          ><i class="fa fa-home text-2xl"></i
+        ></a>
+        <a href="#" class="flex items-center gap-1"
+          ><i class="fa-solid fa-ranking-star text-2xl"></i
+        ></a>
+        <a href="./message.html" class="flex items-center gap-1">
+          <i class="fa-solid fa-comments text-2xl"></i>
+        </a>
+        <a href="./notification.html" class="relative"
+          ><i class="fa fa-bell text-2xl text-blue-500"></i>
+          <span
+            class="absolute -top-2 left-5 inline-flex items-center justify-center h-5 min-w-5 rounded-full bg-red-500 text-white px-1 text-xs font-mono tabular-nums"
+          >
+            8
+          </span></a
+        >
+        <!-- <a href="#"><i class="fa-solid fa-list text-2xl"></i></a> -->
+      </div>
+      <div class="w-100 flex items-center justify-between">
+        <input
+          type="text"
+          name=""
+          class="border w-68 rounded-2xl pl-4 p-1 cursor-pointer border-gray-300"
+          id=""
+          placeholder="Creer une vente"
+        />
+        <button class="w-24 font-semibold cursor-pointer text-blue-600">
+          Echanger ?
+        </button>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="./profile2.html" class="flex items-center gap-1">
+          <i class="fa-regular fa-user text-2xl text-yellow-700"></i>
+        </a>
+        <a href="#" class="flex items-center gap-1">
+          <i class="fa-solid fa-right-to-bracket text-2xl"></i>
+        </a>
+      </div>
+    </nav>
+    <div class="max-w-5xl mx-auto bg-white min-h-screen mt-20">
+      <!-- Notifications Title -->
+      <div class="px-4 py-6">
+        <h1 class="text-2xl font-bold text-black">Notifications</h1>
+      </div>
+
+      <!-- New Section -->
+      <div class="px-4 mb-6">
+        <h2 class="text-sm font-semibold text-gray-600 mb-3">Nouveau</h2>
+
+        <!-- Notification 1 -->
+        <div class="flex items-start space-x-3 mb-4">
+          <img
+            src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=40&h=40&fit=crop&crop=face"
+            alt="Avatar"
+            class="w-10 h-10 rounded-full"
+          />
+          <div class="flex-1">
+            <p class="text-sm text-gray-900">
+              <span class="font-medium">Alex Stanton</span> started following
+              you. Tap to follow Alex back.
+            </p>
+            <p class="text-xs text-gray-500 mt-1">il y a 1h</p>
+          </div>
+          <button class="text-blue-500">
+            <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Today Section -->
+      <div class="px-4 mb-6">
+        <h2 class="text-sm font-semibold text-gray-600 mb-3">Aujourd'hui</h2>
+
+        <!-- Notification 3 -->
+        <div class="flex items-start space-x-3 mb-4">
+          <img
+            src="./gojo.jpeg"
+            alt="Avatar"
+            class="w-10 h-10 object-cover rounded-full"
+          />
+          <div class="flex-1">
+            <p class="text-sm text-gray-900">
+              <span class="font-medium">Gojo</span> started following you. Tap
+              to follow Timothy back.
+            </p>
+            <p class="text-xs text-gray-500 mt-1">4h ago</p>
+          </div>
+          <button class="text-blue-500">
+            <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Notification 4 -->
+        <div class="flex items-start space-x-3 mb-4">
+          <img
+            src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=40&h=40&fit=crop&crop=face"
+            alt="Avatar"
+            class="w-10 h-10 rounded-full"
+          />
+          <div class="flex-1">
+            <p class="text-sm text-gray-900">
+              <span class="font-medium">Jamie</span> viewed your Snap Map. Tap
+              for more details
+            </p>
+            <p class="text-xs text-gray-500 mt-1">6h ago</p>
+          </div>
+          <button class="text-blue-500">
+            <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Notification 5 -->
+        <div class="flex items-start space-x-3 mb-4">
+          <img
+            src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=40&h=40&fit=crop&crop=face"
+            alt="Avatar"
+            class="w-10 h-10 rounded-full"
+          />
+          <div class="flex-1">
+            <p class="text-sm text-gray-900">
+              <span class="font-medium">Chloe Hayes</span> sent you a chat
+              request via Snap Map
+            </p>
+            <p class="text-xs text-gray-500 mt-1">8h ago</p>
+          </div>
+          <button class="text-blue-500">
+            <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Yesterday Section -->
+      <div class="px-4 mb-6">
+        <h2 class="text-sm font-semibold text-gray-600 mb-3">Hier</h2>
+        <div class="flex justify-center py-4">
+          <span class="text-gray-400 text-sm">
+            Aucune nouvelle notification
+          </span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

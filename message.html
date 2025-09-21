@@ -20,13 +20,13 @@
         <a href="./index.html" class="flex items-center gap-1"
           ><i class="fa fa-home text-2xl"></i
         ></a>
-        <a href="#" class="flex items-center gap-1"
-          ><i class="fa fa-users text-2xl"></i
+        <a href="./users-list.html" class="flex items-center gap-1"
+          ><i class="fa fa-ranking-star text-2xl"></i
         ></a>
         <a href="#" class="flex items-center gap-1">
           <i class="fa-solid fa-comments text-2xl text-blue-600"></i>
         </a>
-        <a href="#" class="relative"
+        <a href="./notification.html" class="relative"
           ><i class="fa fa-bell text-2xl"></i>
           <span
             class="absolute -top-2 left-5 inline-flex items-center justify-center h-5 min-w-5 rounded-full bg-red-500 text-white px-1 text-xs font-mono tabular-nums"
@@ -44,10 +44,12 @@
           id=""
           placeholder="Creer une vente"
         />
-        <button class="w-24 font-semibold cursor-pointer text-blue-600">Echanger ?</button>
+        <button class="w-24 font-semibold cursor-pointer text-blue-600">
+          Echanger ?
+        </button>
       </div>
       <div class="flex items-center gap-4">
-        <a href="./profile.html" class="flex items-center gap-1">
+        <a href="./profile2.html" class="flex items-center gap-1">
           <i class="fa-regular fa-user text-2xl text-yellow-700"></i>
         </a>
         <a href="#" class="flex items-center gap-1">
@@ -59,7 +61,7 @@
     <!-- Zone de chat principale -->
     <div class="max-w-6xl h-[86vh] mx-auto mt-20 flex gap-1 overflow-y-hidden">
       <!-- Sidebar gauche -->
-      <div class=" w-80 bg-white border-r border-gray-200 flex flex-col">
+      <div class="w-80 bg-white border-r border-gray-200 flex flex-col">
         <!-- Header avec logo et profil -->
         <div
           class="flex items-center justify-between p-4 border-b border-gray-200"
@@ -70,18 +72,18 @@
             >
               <i class="fas fa-comment text-white text-sm"></i>
             </div>
-            <span class="text-gray-600 text-sm">Jolly</span>
+            <span class="text-gray-600 text-sm">Messages</span>
           </div>
           <div class="flex items-center space-x-2">
             <input
               type="text"
-              placeholder="Search here..."
+              placeholder="Recherche..."
               class="text-sm bg-gray-100 rounded-full px-3 py-1 w-32"
             />
             <div
-              class="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center"
+              class="w-8 h-8 bg-white rounded-full border border-blue-500 flex items-center justify-center"
             >
-              <span class="text-white text-xs font-bold">ZR</span>
+              <i class="fa fa-search text-blue-500"></i>
             </div>
           </div>
         </div>
@@ -93,7 +95,7 @@
               <h2 class="text-lg font-semibold text-gray-800">Messages</h2>
               <span
                 class="bg-blue-600 text-white text-xs rounded-full px-2 py-1"
-                >5</span
+                >1</span
               >
             </div>
 
@@ -104,129 +106,23 @@
                 class="flex items-center p-3 bg-blue-50 rounded-lg cursor-pointer"
               >
                 <div
-                  class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold mr-3"
+                  class="w-15 h-15 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold mr-3"
                 >
-                  BD
+                  <img
+                    src="./gojo.jpeg"
+                    class="w-14 h-14 object-cover rounded-full"
+                    alt=""
+                  />
                 </div>
                 <div class="flex-1">
                   <div class="flex justify-between items-start">
-                    <h3 class="font-medium text-gray-800">Bingi Dingi</h3>
+                    <h3 class="font-medium text-gray-800">Gojo Satoru</h3>
                     <span class="text-xs text-gray-500">10:30</span>
                   </div>
-                  <p class="text-sm text-gray-600">Creative Designer</p>
                 </div>
               </div>
 
               <!-- Autres conversations -->
-              <div
-                class="flex items-center p-3 rounded-lg cursor-pointer hover:bg-gray-50"
-              >
-                <div
-                  class="w-10 h-10 bg-pink-500 rounded-full flex items-center justify-center text-white font-bold mr-3"
-                >
-                  A
-                </div>
-                <div class="flex-1">
-                  <div class="flex justify-between items-start">
-                    <h3 class="font-medium text-gray-800">Aishi</h3>
-                    <span class="text-xs text-gray-500">9:45</span>
-                  </div>
-                  <p class="text-sm text-gray-600">Creative Designer</p>
-                </div>
-              </div>
-
-              <div
-                class="flex items-center p-3 rounded-lg cursor-pointer hover:bg-gray-50"
-              >
-                <div
-                  class="w-10 h-10 bg-cyan-500 rounded-full flex items-center justify-center text-white font-bold mr-3"
-                >
-                  SB
-                </div>
-                <div class="flex-1">
-                  <div class="flex justify-between items-start">
-                    <h3 class="font-medium text-gray-800">Salman Birat</h3>
-                    <span class="text-xs text-gray-500">1 day</span>
-                  </div>
-                  <p class="text-sm text-gray-600">Learning page for website</p>
-                </div>
-              </div>
-
-              <div
-                class="flex items-center p-3 rounded-lg cursor-pointer hover:bg-gray-50"
-              >
-                <div
-                  class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center text-white font-bold mr-3"
-                >
-                  NH
-                </div>
-                <div class="flex-1">
-                  <div class="flex justify-between items-start">
-                    <h3 class="font-medium text-gray-800">Nayem Hasan</h3>
-                    <span class="text-xs text-gray-500">1 day</span>
-                  </div>
-                  <p class="text-sm text-gray-600">Learning page for website</p>
-                </div>
-              </div>
-
-              <div
-                class="flex items-center p-3 rounded-lg cursor-pointer hover:bg-gray-50"
-              >
-                <div
-                  class="w-10 h-10 bg-blue-400 rounded-full flex items-center justify-center text-white font-bold mr-3"
-                >
-                  LO
-                </div>
-                <div class="flex-1">
-                  <div class="flex justify-between items-start">
-                    <h3 class="font-medium text-gray-800">Limpat Ozzam</h3>
-                    <span class="text-xs text-gray-500">1 day</span>
-                  </div>
-                  <p class="text-sm text-gray-600">Learning page for website</p>
-                </div>
-              </div>
-
-              <div
-                class="flex items-center p-3 rounded-lg cursor-pointer hover:bg-gray-50"
-              >
-                <div
-                  class="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center text-white font-bold mr-3"
-                >
-                  ED
-                </div>
-                <div class="flex-1">
-                  <div class="flex justify-between items-start">
-                    <h3 class="font-medium text-gray-800">Elena Dissy</h3>
-                    <span class="text-xs text-gray-500">2 day</span>
-                  </div>
-                  <p class="text-sm text-gray-600">Learning page for website</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Labels section -->
-            <div class="mt-6">
-              <h3 class="text-sm font-medium text-gray-600 mb-3">Labels</h3>
-              <div class="space-y-2">
-                <div class="flex items-center text-sm text-gray-600">
-                  <div class="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
-                  <span>Inbox</span>
-                  <span class="ml-auto text-xs">299</span>
-                </div>
-                <div class="flex items-center text-sm text-gray-600">
-                  <div class="w-2 h-2 bg-blue-500 rounded-full mr-2"></div>
-                  <span>Starred</span>
-                </div>
-                <div class="flex items-center text-sm text-gray-600">
-                  <div class="w-2 h-2 bg-yellow-500 rounded-full mr-2"></div>
-                  <span>Sent Staff</span>
-                </div>
-                <div class="flex items-center text-sm text-gray-600">
-                  <div class="w-2 h-2 bg-red-500 rounded-full mr-2"></div>
-                  <span>Drafts</span>
-                  <span class="ml-auto text-xs">11</span>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -241,10 +137,14 @@
             <div
               class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold mr-3"
             >
-              BD
+              <img
+                src="./gojo.jpeg"
+                class="h-10 w-10 object-cover rounded-full"
+                alt=""
+              />
             </div>
             <div>
-              <h2 class="font-semibold text-gray-800">Bingi Dingi</h2>
+              <h2 class="font-semibold text-gray-800">Gojo Satoru</h2>
               <p class="text-sm text-green-500">10 Minutes</p>
             </div>
           </div>
